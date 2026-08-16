@@ -1,632 +1,462 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Génesis Nails</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
-
-<style>
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background: #fff1f6;
-    color: #5b3444;
-    font-family: "Cormorant Garamond", serif;
-}
-
-/* PORTADA */
-
-.portada {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    padding: 40px 20px;
-
-    background:
-        radial-gradient(circle at 20% 20%, rgba(255,255,255,.9), transparent 30%),
-        radial-gradient(circle at 80% 80%, rgba(255,210,225,.8), transparent 35%),
-        linear-gradient(135deg, #fff5f8, #f9dce7);
-
-    position: relative;
-    overflow: hidden;
-}
-
-/* DECORACIÓN */
-
-.portada::before {
-    content: "♡  ✦  ♡";
-    position: absolute;
-    top: 35px;
-    font-size: 25px;
-    letter-spacing: 15px;
-    color: rgba(150,80,105,.35);
-}
-
-.portada::after {
-    content: "✦";
-    position: absolute;
-    bottom: 40px;
-    font-size: 25px;
-    color: rgba(150,80,105,.4);
-}
-
-/* LOGO */
-
-.logo-container {
-    width: 190px;
-    height: 190px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-bottom: 20px;
-
-    background: rgba(255,255,255,.55);
-
-    border-radius: 50%;
-
-    box-shadow:
-        0 10px 35px rgba(100,40,60,.15),
-        inset 0 0 20px rgba(255,255,255,.7);
-}
-
-.logo {
-    width: 165px;
-    max-height: 165px;
-    object-fit: contain;
-}
-
-/* NOMBRE */
-
-h1 {
-    font-family: "Great Vibes", cursive;
-    font-size: clamp(55px, 12vw, 100px);
-    font-weight: 400;
-    color: #7b4058;
-    line-height: 1;
-}
-
-.frase {
-    margin-top: 15px;
-    font-size: 24px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #936174;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.ornamento {
-    margin: 25px 0;
-    font-size: 25px;
-    color: #b66d88;
-}
+    <title>Génesis Nails</title>
 
-.descripcion {
-    max-width: 520px;
-    font-size: 20px;
-    line-height: 1.6;
-    color: #704658;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-/* BOTONES */
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap"
+          rel="stylesheet">
 
-.botones {
-    display: flex;
-    gap: 15px;
-    margin-top: 35px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+    <style>
 
-.boton {
-    display: inline-block;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    padding: 14px 30px;
+        html {
+            scroll-behavior: smooth;
+        }
 
-    border-radius: 40px;
+        body {
+            background: #fff6f9;
+            color: #5b3545;
+            font-family: "Cormorant Garamond", serif;
+        }
 
-    text-decoration: none;
+        /* =========================
+           PORTADA
+        ========================= */
 
-    background: #8f4c66;
-    color: white;
+        .portada {
+            min-height: 100vh;
+            padding: 40px 20px;
 
-    font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-    transition: .3s;
+            text-align: center;
 
-    box-shadow: 0 8px 20px rgba(100,40,60,.18);
-}
+            background:
+                radial-gradient(
+                    circle at 15% 20%,
+                    #ffffff,
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 85% 80%,
+                    #f5cad9,
+                    transparent 35%
+                ),
+                linear-gradient(
+                    135deg,
+                    #fff8fa,
+                    #f7d8e4
+                );
 
-.boton:hover {
-    transform: translateY(-3px);
-    background: #71384e;
-}
+            position: relative;
+            overflow: hidden;
+        }
 
-.boton-secundario {
-    background: transparent;
-    color: #8f4c66;
-    border: 1px solid #8f4c66;
-}
+        .portada::before {
+            content: "♡     ✦     ♡";
 
-/* CATÁLOGO */
+            position: absolute;
+            top: 30px;
 
-.catalogo {
-    padding: 90px 20px;
-    background: #fff9fb;
-}
+            color: #b77b91;
 
-.titulo-seccion {
-    text-align: center;
-    margin-bottom: 50px;
-}
+            font-size: 22px;
+            letter-spacing: 10px;
 
-.titulo-seccion span {
-    font-size: 25px;
-    color: #b66d88;
-}
+            opacity: .6;
+        }
 
-.titulo-seccion h2 {
-    margin-top: 10px;
-    font-family: "Great Vibes", cursive;
-    font-size: 55px;
-    font-weight: 400;
-    color: #7b4058;
-}
+        .portada::after {
+            content: "✦";
 
-.titulo-seccion p {
-    margin-top: 8px;
-    font-size: 19px;
-}
+            position: absolute;
+            bottom: 35px;
 
-/* GALERÍA */
+            color: #b77b91;
 
-.galeria {
-    max-width: 1100px;
-    margin: auto;
+            font-size: 25px;
+        }
 
-    display: grid;
+        /* =========================
+           LOGO
+        ========================= */
 
-    grid-template-columns: repeat(4, 1fr);
+        .logo-container {
+            width: 210px;
+            height: 210px;
 
-    gap: 20px;
-}
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-.tarjeta {
-    overflow: hidden;
+            margin-bottom: 20px;
 
-    border-radius: 20px;
+            border-radius: 50%;
 
-    background: white;
+            background: rgba(255,255,255,.55);
 
-    box-shadow: 0 8px 25px rgba(80,30,50,.12);
+            box-shadow:
+                0 15px 40px rgba(100,40,60,.12),
+                inset 0 0 20px rgba(255,255,255,.8);
+        }
 
-    transition: .3s;
-}
+        .logo {
+            width: 185px;
+            height: 185px;
 
-.tarjeta:hover {
-    transform: translateY(-7px);
-}
+            object-fit: contain;
+        }
 
-.tarjeta img {
-    width: 100%;
-    height: 300px;
+        /* =========================
+           TITULO
+        ========================= */
 
-    display: block;
+        h1 {
+            font-family: "Great Vibes", cursive;
 
-    object-fit: cover;
+            font-size: clamp(60px, 12vw, 105px);
 
-    transition: .4s;
-}
+            font-weight: 400;
 
-.tarjeta:hover img {
-    transform: scale(1.05);
-}
+            color: #7b4058;
 
-/* ESTILOS */
+            line-height: 1;
+        }
 
-.estilos {
-    padding: 90px 20px;
+        .frase {
+            margin-top: 12px;
 
-    background:
-        linear-gradient(
-            135deg,
-            #f8dce7,
-            #fff2f7
-        );
-}
+            font-family: "Cormorant Garamond", serif;
 
-.estilos-contenedor {
-    max-width: 900px;
-    margin: auto;
+            font-size: 22px;
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+            letter-spacing: 4px;
 
-    gap: 25px;
-}
+            text-transform: uppercase;
 
-.estilo-item {
-    text-align: center;
+            color: #956075;
+        }
 
-    background: rgba(255,255,255,.65);
+        .ornamento {
+            margin: 22px 0;
 
-    padding: 35px 20px;
+            color: #b36d86;
 
-    border-radius: 25px;
+            font-size: 25px;
+        }
 
-    box-shadow: 0 8px 25px rgba(90,40,60,.08);
-}
+        .descripcion {
+            max-width: 520px;
 
-.icono {
-    font-size: 35px;
-    color: #a95e7a;
-    margin-bottom: 15px;
-}
+            font-size: 19px;
 
-.estilo-item h3 {
-    font-size: 27px;
-    color: #7b4058;
-    margin-bottom: 10px;
-}
+            line-height: 1.7;
 
-.estilo-item p {
-    font-size: 17px;
-}
+            color: #70495a;
+        }
 
-/* CONTACTO */
+        /* =========================
+           BOTONES
+        ========================= */
 
-.contacto {
-    padding: 100px 20px;
+        .botones {
+            margin-top: 30px;
 
-    text-align: center;
+            display: flex;
 
-    background: #fff9fb;
-}
+            justify-content: center;
 
-.contacto-contenido {
-    max-width: 700px;
-    margin: auto;
-}
+            gap: 15px;
 
-.pequeno {
-    letter-spacing: 4px;
-    font-size: 14px;
-    color: #a15e78;
-}
+            flex-wrap: wrap;
+        }
 
-.contacto h2 {
-    font-family: "Great Vibes", cursive;
-    font-size: 60px;
-    font-weight: 400;
-    color: #7b4058;
-    margin: 15px 0;
-}
+        .boton {
+            display: inline-block;
 
-.contacto p {
-    font-size: 20px;
-}
+            padding: 14px 30px;
 
-.telefono {
-    margin: 25px 0;
-    font-size: 20px;
-    color: #75445a;
-}
+            border-radius: 40px;
 
-.whatsapp {
-    margin-top: 10px;
-}
+            background: #874a63;
 
-/* FOOTER */
+            color: white;
 
-footer {
-    padding: 40px 20px;
+            text-decoration: none;
 
-    text-align: center;
+            font-family: "Cormorant Garamond", serif;
 
-    background: #71384e;
-    color: white;
-}
+            font-size: 18px;
 
-footer h3 {
-    font-family: "Great Vibes", cursive;
-    font-size: 40px;
-    font-weight: 400;
-}
+            transition: .3s;
+        }
 
-footer p {
-    margin: 8px 0;
-    font-size: 17px;
-}
+        .boton:hover {
+            background: #683447;
 
-footer span {
-    font-size: 14px;
-    opacity: .8;
-}
+            transform: translateY(-3px);
+        }
 
-/* CELULAR */
+        .boton-secundario {
+            background: transparent;
 
-@media (max-width: 800px) {
+            color: #874a63;
 
-    .galeria {
-        grid-template-columns: repeat(2, 1fr);
-    }
+            border: 1px solid #874a63;
+        }
 
-    .tarjeta img {
-        height: 260px;
-    }
+        .boton-secundario:hover {
+            color: white;
+        }
 
-    .estilos-contenedor {
-        grid-template-columns: 1fr;
-        max-width: 450px;
-    }
+        /* =========================
+           SECCIONES
+        ========================= */
 
-}
+        .catalogo {
+            padding: 90px 6%;
 
-@media (max-width: 500px) {
+            background: #fffafb;
+        }
 
-    .logo-container {
-        width: 160px;
-        height: 160px;
-    }
+        .titulo-seccion {
+            text-align: center;
 
-    .logo {
-        width: 140px;
-        max-height: 140px;
-    }
+            margin-bottom: 50px;
+        }
 
-    h1 {
-        font-size: 65px;
-    }
+        .titulo-seccion span {
+            color: #b36d86;
 
-    .frase {
-        font-size: 18px;
-    }
+            letter-spacing: 4px;
 
-    .descripcion {
-        font-size: 18px;
-    }
+            font-size: 13px;
+        }
 
-    .galeria {
-        grid-template-columns: 1fr 1fr;
-        gap: 12px;
-    }
+        .titulo-seccion h2 {
+            margin-top: 10px;
 
-    .tarjeta img {
-        height: 210px;
-    }
+            font-family: "Great Vibes", cursive;
 
-    .titulo-seccion h2 {
-        font-size: 45px;
-    }
+            font-size: 60px;
 
-    .contacto h2 {
-        font-size: 48px;
-    }
+            font-weight: 400;
 
-}
+            color: #7b4058;
+        }
 
-</style>
-</head>
+        .titulo-seccion p {
+            margin-top: 8px;
 
-<body>
+            font-size: 19px;
 
-<header class="portada">
+            color: #765362;
+        }
 
-    <div class="logo-container">
+        /* =========================
+           GALERÍA
+        ========================= */
 
-        <img
-            src="imagen/logo.png_20260816_161851_0000.png"
-            alt="Logo Génesis Nails"
-            class="logo"
-        >
+        .galeria {
+            max-width: 1200px;
 
-    </div>
+            margin: auto;
 
-    <h1>Génesis Nails</h1>
+            display: grid;
 
-    <p class="frase">
-        Belleza en cada detalle
-    </p>
+            grid-template-columns: repeat(2, 1fr);
 
-    <div class="ornamento">
-        ✦
-    </div>
+            gap: 28px;
+        }
 
-    <p class="descripcion">
-        Diseños de uñas elegantes, delicados y únicos.
-        Encuentra el estilo perfecto para ti.
-    </p>
+        .tarjeta {
+            background: white;
 
-    <div class="botones">
+            border-radius: 20px;
 
-        <a href="#catalogo" class="boton">
-            Ver diseños
-        </a>
+            overflow: hidden;
 
-        <a href="#contacto" class="boton boton-secundario">
-            Contactar
-        </a>
+            box-shadow:
+                0 10px 30px rgba(80,30,50,.12);
 
-    </div>
+            transition: .35s;
+        }
 
-</header>
+        .tarjeta:hover {
+            transform: translateY(-7px);
 
+            box-shadow:
+                0 18px 40px rgba(80,30,50,.18);
+        }
 
-<section id="catalogo" class="catalogo">
+        .tarjeta img {
+            width: 100%;
 
-    <div class="titulo-seccion">
+            height: 500px;
 
-        <span>✦</span>
+            display: block;
 
-        <h2>Nuestros diseños</h2>
+            object-fit: cover;
 
-        <p>
-            Descubre nuestra colección
-        </p>
+            transition: .4s;
+        }
 
-    </div>
+        .tarjeta:hover img {
+            transform: scale(1.03);
+        }
 
+        /* =========================
+           INSPIRACIÓN
+        ========================= */
 
-    <div class="galeria">
+        .inspiracion {
+            padding: 100px 20px;
 
-        <div class="tarjeta">
-            <img src="imagen/coleccion-01.jpg" alt="Diseño de uñas">
-        </div>
+            text-align: center;
 
-        <div class="tarjeta">
-            <img src="imagen/coleccion-02.jpg" alt="Diseño de uñas">
-        </div>
+            background:
+                linear-gradient(
+                    135deg,
+                    #f8dce7,
+                    #fff4f7
+                );
+        }
 
-        <div class="tarjeta">
-            <img src="imagen/coleccion-03.jpg" alt="Diseño de uñas">
-        </div>
+        .inspiracion h2 {
+            font-family: "Great Vibes", cursive;
 
-        <div class="tarjeta">
-            <img src="imagen/coleccion-04.jpg" alt="Diseño de uñas">
-        </div>
+            font-size: 60px;
 
-        <div class="tarjeta">
-            <img src="imagen/coleccion-05.jpg" alt="Diseño de uñas">
-        </div>
+            font-weight: 400;
 
-        <div class="tarjeta">
-            <img src="imagen/coleccion-06.jpg" alt="Diseño de uñas">
-        </div>
+            color: #7b4058;
 
-        <div class="tarjeta">
-            <img src="imagen/coleccion-07.jpg" alt="Diseño de uñas">
-        </div>
+            margin-bottom: 15px;
+        }
 
-        <div class="tarjeta">
-            <img src="imagen/coleccion-08.jpg" alt="Diseño de uñas">
-        </div>
+        .inspiracion p {
+            max-width: 600px;
 
-    </div>
+            margin: auto;
 
-</section>
+            font-size: 19px;
 
+            line-height: 1.7;
+        }
 
-<section class="estilos">
+        /* =========================
+           CONTACTO
+        ========================= */
 
-    <div class="titulo-seccion">
+        .contacto {
+            padding: 100px 20px;
 
-        <span>♡</span>
+            text-align: center;
 
-        <h2>Encuentra tu estilo</h2>
+            background: #fffafb;
+        }
 
-        <p>
-            Diseños pensados para cada ocasión
-        </p>
+        .contacto h2 {
+            font-family: "Great Vibes", cursive;
 
-    </div>
+            font-size: 60px;
 
+            font-weight: 400;
 
-    <div class="estilos-contenedor">
+            color: #7b4058;
 
-        <div class="estilo-item">
+            margin: 10px 0 15px;
+        }
 
-            <div class="icono">✧</div>
+        .contacto p {
+            font-size: 19px;
 
-            <h3>Elegante</h3>
+            margin-bottom: 25px;
+        }
 
-            <p>
-                Diseños delicados y sofisticados.
-            </p>
+        /* =========================
+           FOOTER
+        ========================= */
 
-        </div>
+        footer {
+            padding: 45px 20px;
 
+            text-align: center;
 
-        <div class="estilo-item">
+            background: #71394e;
 
-            <div class="icono">♡</div>
+            color: white;
+        }
 
-            <h3>Delicado</h3>
+        footer h3 {
+            font-family: "Great Vibes", cursive;
 
-            <p>
-                Detalles suaves y femeninos.
-            </p>
+            font-size: 45px;
 
-        </div>
+            font-weight: 400;
+        }
 
+        footer p {
+            margin-top: 8px;
 
-        <div class="estilo-item">
+            font-size: 17px;
+        }
 
-            <div class="icono">✦</div>
+        /* =========================
+           CELULAR
+        ========================= */
 
-            <h3>Único</h3>
+        @media (max-width: 700px) {
 
-            <p>
-                Diseños para destacar.
-            </p>
+            .logo-container {
+                width: 170px;
+                height: 170px;
+            }
 
-        </div>
+            .logo {
+                width: 150px;
+                height: 150px;
+            }
 
-    </div>
+            h1 {
+                font-size: 65px;
+            }
 
-</section>
+            .frase {
+                font-size: 17px;
 
+                letter-spacing: 2px;
+            }
 
-<section id="contacto" class="contacto">
+            .descripcion {
+                font-size: 17px;
+            }
 
-    <div class="contacto-contenido">
+            .galeria {
+                grid-template-columns: 1fr;
+            }
 
-        <span class="pequeno">
-            GÉNESIS NAILS
-        </span>
+            .tarjeta img {
+                height: auto;
 
-        <h2>
-            ¿Encontraste tu diseño favorito?
-        </h2>
+                aspect-ratio: 1 / 1;
 
-        <p>
-            Agenda tu cita y luce unas uñas increíbles.
-        </p>
+                object-fit: cover;
+            }
 
-        <div class="telefono">
-            📞 Número de teléfono
-        </div>
-
-        <a href="#" class="boton whatsapp">
-            Contactar por WhatsApp
-        </a>
-
-    </div>
-
-</section>
-
-
-<footer>
-
-    <h3>Génesis Nails</h3>
-
-    <p>
-        Belleza • Elegancia • Estilo
-    </p>
-
-    <span>
-        © 2026 Génesis Nails
-    </span>
-
-</footer>
-
-</body>
-</html>
+            .titulo-seccion h2,
+            .in
