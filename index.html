@@ -1,437 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="Génesis Nails - Catálogo de diseños de uñas">
+    <title>Génesis Nails</title>
 
-    <title>Génesis Nails | Catálogo</title>
-
-    <!-- FUENTES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
-
 
 <body>
 
+    <!-- PORTADA -->
+    <main class="portada">
 
-    <!-- =========================
-         NAVEGACIÓN
-    ========================== -->
+        <!-- LOGO -->
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo Génesis Nails" class="logo">
+        </div>
 
-    <header class="navbar">
+        <!-- NOMBRE -->
+        <h1>Génesis Nails</h1>
 
-        <a href="#inicio" class="brand">
+        <p class="subtitulo">
+            Belleza en cada detalle
+        </p>
 
-            <span>GÉNESIS</span>
-
-            <small>NAILS</small>
-
-        </a>
-
-
-        <nav>
-
-            <a href="#inicio">
-                Inicio
-            </a>
-
-            <a href="#disenos">
-                Diseños
-            </a>
-
-            <a href="#manos">
-                En manos
-            </a>
-
-            <a href="#contacto">
-                Contacto
-            </a>
-
-        </nav>
-
-    </header>
-
-
-
-    <!-- =========================
-         PORTADA
-    ========================== -->
-
-    <section
-        class="hero"
-        id="inicio"
-    >
-
-
-        <!-- DECORACIONES -->
-
-        <div class="decor decor-one">
+        <div class="decoracion">
             ✦
         </div>
 
-
-        <div class="decor decor-two">
-            ♡
-        </div>
-
-
-        <div class="decor decor-three">
-            ✧
-        </div>
-
-
-
-        <!-- CONTENIDO -->
-
-        <div class="hero-content">
-
-
-            <p class="small-title">
-                NAIL ART
-            </p>
-
-
-            <!-- LOGO -->
-
-            <img
-                src="img/logo.jpg"
-                alt="Génesis Nails"
-                class="main-logo"
-            >
-
-
-            <p class="artist-name">
-
-                by
-
-                <strong>
-                    Génesis Romero
-                </strong>
-
-            </p>
-
-
-            <div class="gold-line"></div>
-
-
-            <p class="description">
-
-                Diseños únicos, elegantes y
-                creados para destacar.
-
-            </p>
-
-
-
-            <!-- BOTONES -->
-
-            <div class="main-buttons">
-
-
-                <a
-                    href="#disenos"
-                    class="main-button"
-                >
-
-                    <span>♡</span>
-
-                    Ver diseños
-
-                </a>
-
-
-
-                <a
-                    href="#manos"
-                    class="main-button secondary"
-                >
-
-                    <span>✦</span>
-
-                    Ver en manos
-
-                </a>
-
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         INTRODUCCIÓN
-    ========================== -->
-
-    <section class="intro">
-
-
-        <p class="section-small">
-            GÉNESIS NAILS
+        <!-- DESCRIPCIÓN -->
+        <p class="descripcion">
+            Diseños de uñas elegantes, delicados y únicos.
+            Descubre nuestro catálogo y encuentra el estilo perfecto para ti.
         </p>
 
+        <!-- BOTONES -->
+        <div class="botones">
 
-        <h1>
-            Diseños para cada estilo
-        </h1>
+            <a href="#catalogo" class="boton">
+                Ver diseños
+            </a>
 
+            <a href="#contacto" class="boton">
+                Contactar
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- CATÁLOGO -->
+    <section id="catalogo" class="seccion">
+
+        <h2>Nuestros diseños</h2>
 
         <p>
-
-            Explora nuestra colección de diseños
-            y encuentra el estilo perfecto para ti.
-
+            Elige tu estilo favorito
         </p>
 
+        <div class="galeria">
+
+            <div class="diseno">
+                <img src="img/diseno1.jpg" alt="Diseño de uñas 1">
+            </div>
+
+            <div class="diseno">
+                <img src="img/diseno2.jpg" alt="Diseño de uñas 2">
+            </div>
+
+            <div class="diseno">
+                <img src="img/diseno3.jpg" alt="Diseño de uñas 3">
+            </div>
+
+            <div class="diseno">
+                <img src="img/diseno4.jpg" alt="Diseño de uñas 4">
+            </div>
+
+        </div>
 
     </section>
 
 
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
 
-    <!-- =========================
-         DISEÑOS
-    ========================== -->
+        <h2>Agenda tu cita</h2>
 
-    <section
-        class="designs-section"
-        id="disenos"
-    >
+        <p>
+            ¿Te gustó algún diseño?
+        </p>
 
+        <p class="telefono">
+            📞 Próximamente: número de teléfono
+        </p>
 
-        <div class="section-title">
+        <a href="#" class="boton">
+            Escribir por WhatsApp
+        </a>
 
+    </section>
 
-            <p class="section-small">
-                COLECCIÓN
-            </p>
 
+    <!-- PIE DE PÁGINA -->
+    <footer>
 
-            <h2>
-                Nuestros diseños
-            </h2>
+        <p>Génesis Nails</p>
 
+        <span>
+            Belleza • Elegancia • Estilo
+        </span>
 
-            <div class="gold-line"></div>
+    </footer>
 
 
-            <p>
+    <script src="script.js"></script>
 
-                Descubre todos nuestros estilos,
-                colores y formas.
-
-            </p>
-
-
-        </div>
-
-
-
-        <!-- GALERÍA -->
-
-        <div class="design-gallery">
-
-
-            <!-- DISEÑO 01 -->
-
-            <article class="design-card">
-
-                <img
-                    src="img/coleccion-01.jpg"
-                    alt="Diseños de uñas"
-                >
-
-                <div class="design-info">
-
-                    <span>
-                        01
-                    </span>
-
-                    <h3>
-                        Mariposas
-                    </h3>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- DISEÑO 02 -->
-
-            <article class="design-card">
-
-                <img
-                    src="img/coleccion-02.jpg"
-                    alt="Diseños de uñas"
-                >
-
-                <div class="design-info">
-
-                    <span>
-                        02
-                    </span>
-
-                    <h3>
-                        Color & Naturaleza
-                    </h3>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- DISEÑO 03 -->
-
-            <article class="design-card">
-
-                <img
-                    src="img/coleccion-03.jpg"
-                    alt="Diseños de uñas"
-                >
-
-                <div class="design-info">
-
-                    <span>
-                        03
-                    </span>
-
-                    <h3>
-                        Neón
-                    </h3>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- DISEÑO 04 -->
-
-            <article class="design-card">
-
-                <img
-                    src="img/coleccion-04.jpg"
-                    alt="Diseños de uñas"
-                >
-
-                <div class="design-info">
-
-                    <span>
-                        04
-                    </span>
-
-                    <h3>
-                        Decoración 3D
-                    </h3>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- DISEÑO 05 -->
-
-            <article class="design-card">
-
-                <img
-                    src="img/coleccion-05.jpg"
-                    alt="Diseños de uñas"
-                >
-
-                <div class="design-info">
-
-                    <span>
-                        05
-                    </span>
-
-                    <h3>
-                        Glamour
-                    </h3>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- DISEÑO 06 -->
-
-            <article class="design-card">
-
-                <img
-                    src="img/coleccion-06.jpg"
-                    alt="Diseños de uñas"
-                >
-
-                <div class="design-info">
-
-                    <span>
-                        06
-                    </span>
-
-                    <h3>
-                        Flores
-                    </h3>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- DISEÑO 07 -->
-
-            <article class="design-card">
-
-                <img
-                    src="img/coleccion-07.jpg"
-                    alt="Diseños de uñas"
-                >
-
-                <div class="design-info">
-
-                    <span>
-                        07
-                    </span>
-
-                    <h3>
-                        Red & Noir
-                    </h3>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- DISEÑO 08 -->
-
-            <article class="design-card">
-
-                <img
-                    src="img/coleccion-08.jpg"
-                    alt="Diseños de uñas"
-                >
-
-                <div class="design-info">
-
-                    <span>
-                        08
+</body>
+</html>
