@@ -3,171 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Génesis Nails</title>
 
+    <!-- Tipografías elegantes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <style>
-        body {
+
+        * {
+            box-sizing: border-box;
             margin: 0;
-            background: #fff1f6;
-            color: #71394e;
-            font-family: Arial, sans-serif;
-            text-align: center;
+            padding: 0;
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #fff3f7;
+            color: #633c4d;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        /* =========================
+           PORTADA
+        ========================= */
 
         header {
+            min-height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
             padding: 50px 20px;
+
+            background:
+                radial-gradient(
+                    circle at 10% 20%,
+                    #ffffff 0%,
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 90% 80%,
+                    #f3c5d6 0%,
+                    transparent 35%
+                ),
+                linear-gradient(
+                    135deg,
+                    #fffafd,
+                    #f6d5e2
+                );
+
+            position: relative;
+            overflow: hidden;
         }
 
-        header img {
-            width: 200px;
-            max-width: 80%;
+        header::before {
+            content: "♡   ✦   ♡";
+
+            position: absolute;
+            top: 30px;
+
+            font-size: 22px;
+
+            color: #b4778e;
+
+            letter-spacing: 8px;
         }
+
+        /* LOGO */
+
+        .logo {
+            width: 210px;
+            height: 210px;
+
+            object-fit: contain;
+
+            margin-bottom: 25px;
+
+            border-radius: 50%;
+
+            background: rgba(255,255,255,.6);
+
+            padding: 8px;
+
+            box-shadow:
+                0 15px 40px rgba(100,40,60,.13);
+        }
+
+        /* NOMBRE */
 
         h1 {
-            font-family: Georgia, serif;
-            font-size: 55px;
-            margin: 20px 0 10px;
+            font-family: "Allura", cursive;
+
+            font-size: clamp(75px, 14vw, 125px);
+
+            font-weight: 400;
+
+            line-height: 1;
+
+            color: #793f57;
         }
 
-        p {
-            font-size: 18px;
+        .subtitulo {
+            margin-top: 18px;
+
+            font-size: 14px;
+
+            letter-spacing: 5px;
+
+            text-transform: uppercase;
+
+            color: #986178;
         }
+
+        .frase {
+            max-width: 550px;
+
+            margin-top: 25px;
+
+            font-size: 18px;
+
+            line-height: 1.7;
+
+            color: #704658;
+        }
+
+        .decoracion {
+            margin: 25px 0;
+
+            font-size: 25px;
+
+            color: #b56f88;
+        }
+
+        /* =========================
+           BOTONES
+        ========================= */
 
         .botones {
-            margin: 30px 0;
+            margin-top: 30px;
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            flex-wrap: wrap;
         }
 
         .boton {
             display: inline-block;
+
             padding: 14px 25px;
-            margin: 5px;
-            background: #8b4b65;
+
+            border-radius: 40px;
+
+            background: #82465f;
+
             color: white;
+
             text-decoration: none;
-            border-radius: 30px;
+
+            font-size: 15px;
+
+            transition: .3s;
+
+            box-shadow:
+                0 8px 20px rgba(100,40,60,.12);
         }
 
-        section {
-            padding: 60px 20px;
+        .boton:hover {
+            background: #693449;
+
+            transform: translateY(-3px);
         }
 
-        .galeria {
-            max-width: 1000px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
-        }
-
-        .galeria img {
-            width: 100%;
-            height: 450px;
-            object-fit: cover;
-            border-radius: 20px;
-            display: block;
-        }
-
-        @media (max-width: 700px) {
-            .galeria {
-                grid-template-columns: 1fr;
-            }
-
-            .galeria img {
-                height: auto;
-            }
-
-            h1 {
-                font-size: 45px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <header>
-
-        <img
-            src="./img/logo.png_20260816_161851_0000.png"
-            alt="Génesis Nails"
-        >
-
-        <h1>Génesis Nails</h1>
-
-        <p>
-            Belleza en cada detalle
-        </p>
-
-        <div class="botones">
-
-            <a href="#disenos" class="boton">
-                Ver diseños
-            </a>
-
-            <a href="#manos" class="boton">
-                Diseños en manos
-            </a>
-
-            <a href="#contacto" class="boton">
-                Contactar
-            </a>
-
-        </div>
-
-    </header>
-
-
-    <section id="disenos">
-
-        <h2>✨ Nuestros diseños ✨</h2>
-
-        <p>Descubre nuestra colección</p>
-
-        <div class="galeria">
-
-            <img src="./img/coleccion-01.jpg" alt="Diseño 1">
-
-            <img src="./img/coleccion-02.jpg" alt="Diseño 2">
-
-            <img src="./img/coleccion-03.jpg" alt="Diseño 3">
-
-            <img src="./img/coleccion-04.jpg" alt="Diseño 4">
-
-            <img src="./img/coleccion-05.jpg" alt="Diseño 5">
-
-            <img src="./img/coleccion-06.jpg" alt="Diseño 6">
-
-            <img src="./img/coleccion-07.jpg" alt="Diseño 7">
-
-            <img src="./img/coleccion-08.jpg" alt="Diseño 8">
-
-        </div>
-
-    </section>
-
-
-    <section id="manos">
-
-        <h2>Diseños en manos</h2>
-
-        <p>
-            Aquí podremos colocar las fotografías
-            de los diseños aplicados en manos.
-        </p>
-
-    </section>
-
-
-    <section id="contacto">
-
-        <h2>Contacto</h2>
-
-        <p>
-            Comunícate con Génesis para reservar tu cita.
-        </p>
-
-    </section>
-
-
-</body>
-</html>
+        .bot
