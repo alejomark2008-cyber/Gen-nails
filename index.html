@@ -29,11 +29,13 @@
             background: #fff4f8;
         }
 
-        /* PORTADA */
+        /* =========================
+           PORTADA
+        ========================= */
 
         .portada {
             min-height: 100vh;
-            padding: 40px 20px;
+            padding: 50px 20px;
 
             display: flex;
             flex-direction: column;
@@ -58,14 +60,46 @@
                     #fff9fb,
                     #f6d7e3
                 );
+
+            position: relative;
+            overflow: hidden;
         }
 
-        /* LOGO */
+        .portada::before {
+            content: "♡     ✦     ♡";
+
+            position: absolute;
+            top: 30px;
+
+            color: #b77b91;
+
+            font-size: 22px;
+            letter-spacing: 10px;
+
+            opacity: .6;
+        }
+
+        .portada::after {
+            content: "✦";
+
+            position: absolute;
+            bottom: 35px;
+
+            color: #b77b91;
+
+            font-size: 25px;
+        }
+
+        /* =========================
+           LOGO
+        ========================= */
 
         .logo {
             width: 190px;
             height: 190px;
+
             object-fit: contain;
+
             margin-bottom: 20px;
 
             border-radius: 50%;
@@ -78,570 +112,53 @@
                 0 15px 35px rgba(100,50,70,.15);
         }
 
-        /* TITULO */
+        /* =========================
+           TITULO
+        ========================= */
 
         h1 {
             font-family: "Great Vibes", cursive;
+
             font-size: clamp(60px, 12vw, 105px);
+
             font-weight: 400;
+
             color: #7b4058;
+
             line-height: 1;
         }
 
         .frase {
             margin-top: 15px;
+
             font-size: 21px;
+
             letter-spacing: 4px;
+
             text-transform: uppercase;
+
             color: #986078;
         }
 
         .ornamento {
             margin: 25px 0;
+
             color: #b66d88;
+
             font-size: 25px;
         }
 
         .descripcion {
             max-width: 520px;
+
             font-size: 20px;
+
             line-height: 1.6;
         }
 
-        /* BOTONES */
+        /* =========================
+           BOTONES
+        ========================= */
 
         .botones {
-            margin-top: 35px;
-
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .boton {
-            display: inline-block;
-
-            padding: 14px 32px;
-
-            border-radius: 40px;
-
-            background: #874b64;
-            color: white;
-
-            text-decoration: none;
-
-            font-size: 18px;
-
-            transition: .3s;
-        }
-
-        .boton:hover {
-            background: #6c354c;
-            transform: translateY(-3px);
-        }
-
-        .boton-secundario {
-            background: transparent;
-            color: #874b64;
-            border: 1px solid #874b64;
-        }
-
-        /* CATÁLOGO */
-
-        .catalogo {
-            padding: 90px 20px;
-            background: #fffafb;
-        }
-
-        .titulo {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .titulo span {
-            color: #b36d86;
-            letter-spacing: 4px;
-            font-size: 14px;
-        }
-
-        .titulo h2 {
-            margin-top: 10px;
-
-            font-family: "Great Vibes", cursive;
-
-            font-size: 60px;
-            font-weight: 400;
-
-            color: #7b4058;
-        }
-
-        .titulo p {
-            margin-top: 8px;
-            font-size: 19px;
-        }
-
-        /* IMÁGENES */
-
-        .galeria {
-            width: 100%;
-            max-width: 1100px;
-
-            margin: auto;
-
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-
-            gap: 25px;
-        }
-
-        .tarjeta {
-            overflow: hidden;
-
-            border-radius: 20px;
-
-            background: white;
-
-            box-shadow:
-                0 10px 30px rgba(80,30,50,.12);
-        }
-
-        .tarjeta img {
-            display: block;
-
-            width: 100%;
-            height: 500px;
-
-            object-fit: cover;
-
-            transition: transform .4s;
-        }
-
-        .tarjeta:hover img {
-            transform: scale(1.04);
-        }
-
-        /* ESTILOS */
-
-        .estilos {
-            padding: 90px 20px;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #f8dce7,
-                    #fff4f7
-                );
-
-            text-align: center;
-        }
-
-        .estilos-contenedor {
-            max-width: 900px;
-            margin: 45px auto 0;
-
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-
-            gap: 25px;
-        }
-
-        .estilo {
-            padding: 35px 20px;
-
-            border-radius: 25px;
-
-            background: rgba(255,255,255,.65);
-
-            box-shadow:
-                0 8px 25px rgba(80,30,50,.08);
-        }
-
-        .estilo .icono {
-            font-size: 35px;
-            color: #a85f7b;
-            margin-bottom: 15px;
-        }
-
-        .estilo h3 {
-            font-size: 27px;
-            color: #7b4058;
-            margin-bottom: 8px;
-        }
-
-        .estilo p {
-            font-size: 17px;
-        }
-
-        /* CONTACTO */
-
-        .contacto {
-            padding: 100px 20px;
-
-            text-align: center;
-
-            background: #fffafb;
-        }
-
-        .contacto h2 {
-            margin: 15px 0;
-
-            font-family: "Great Vibes", cursive;
-
-            font-size: 60px;
-
-            font-weight: 400;
-
-            color: #7b4058;
-        }
-
-        .contacto p {
-            font-size: 19px;
-            margin-bottom: 25px;
-        }
-
-        /* FOOTER */
-
-        footer {
-            padding: 45px 20px;
-
-            text-align: center;
-
-            background: #71394e;
-
-            color: white;
-        }
-
-        footer h3 {
-            font-family: "Great Vibes", cursive;
-            font-size: 45px;
-            font-weight: 400;
-        }
-
-        footer p {
-            margin-top: 8px;
-            font-size: 17px;
-        }
-
-        /* CELULAR */
-
-        @media (max-width: 700px) {
-
-            .logo {
-                width: 160px;
-                height: 160px;
-            }
-
-            h1 {
-                font-size: 65px;
-            }
-
-            .frase {
-                font-size: 17px;
-                letter-spacing: 2px;
-            }
-
-            .descripcion {
-                font-size: 18px;
-            }
-
-            .galeria {
-                grid-template-columns: 1fr;
-            }
-
-            .tarjeta img {
-                height: auto;
-                aspect-ratio: 1 / 1;
-            }
-
-            .estilos-contenedor {
-                grid-template-columns: 1fr;
-                max-width: 450px;
-            }
-
-            .titulo h2,
-            .contacto h2 {
-                font-size: 48px;
-            }
-        }
-
-    </style>
-</head>
-
-
-<body>
-
-    <!-- PORTADA -->
-
-    <section class="portada">
-
-        <img
-            class="logo"
-            src="imagen/logo.png_20260816_161851_0000.png"
-            alt="Logo Génesis Nails"
-        >
-
-        <h1>
-            Génesis Nails
-        </h1>
-
-        <p class="frase">
-            Belleza en cada detalle
-        </p>
-
-        <div class="ornamento">
-            ✦
-        </div>
-
-        <p class="descripcion">
-            Diseños de uñas elegantes, delicados y únicos.
-            Encuentra el estilo perfecto para ti.
-        </p>
-
-        <div class="botones">
-
-            <a
-                href="#catalogo"
-                class="boton"
-            >
-                Ver diseños
-            </a>
-
-            <a
-                href="#contacto"
-                class="boton boton-secundario"
-            >
-                Contactar
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- CATÁLOGO -->
-
-    <section
-        id="catalogo"
-        class="catalogo"
-    >
-
-        <div class="titulo">
-
-            <span>
-                GÉNESIS NAILS
-            </span>
-
-            <h2>
-                Nuestros diseños
-            </h2>
-
-            <p>
-                Descubre nuestra colección
-            </p>
-
-        </div>
-
-
-        <div class="galeria">
-
-
-            <div class="tarjeta">
-                <img
-                    src="imagen/coleccion-01.jpg"
-                    alt="Diseño de uñas 1"
-                >
-            </div>
-
-
-            <div class="tarjeta">
-                <img
-                    src="imagen/coleccion-02.jpg"
-                    alt="Diseño de uñas 2"
-                >
-            </div>
-
-
-            <div class="tarjeta">
-                <img
-                    src="imagen/coleccion-03.jpg"
-                    alt="Diseño de uñas 3"
-                >
-            </div>
-
-
-            <div class="tarjeta">
-                <img
-                    src="imagen/coleccion-04.jpg"
-                    alt="Diseño de uñas 4"
-                >
-            </div>
-
-
-            <div class="tarjeta">
-                <img
-                    src="imagen/coleccion-05.jpg"
-                    alt="Diseño de uñas 5"
-                >
-            </div>
-
-
-            <div class="tarjeta">
-                <img
-                    src="imagen/coleccion-06.jpg"
-                    alt="Diseño de uñas 6"
-                >
-            </div>
-
-
-            <div class="tarjeta">
-                <img
-                    src="imagen/coleccion-07.jpg"
-                    alt="Diseño de uñas 7"
-                >
-            </div>
-
-
-            <div class="tarjeta">
-                <img
-                    src="imagen/coleccion-08.jpg"
-                    alt="Diseño de uñas 8"
-                >
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- ESTILOS -->
-
-    <section class="estilos">
-
-        <div class="titulo">
-
-            <span>
-                ✦ INSPIRACIÓN ✦
-            </span>
-
-            <h2>
-                Encuentra tu estilo
-            </h2>
-
-            <p>
-                Diseños pensados para cada ocasión
-            </p>
-
-        </div>
-
-
-        <div class="estilos-contenedor">
-
-            <div class="estilo">
-
-                <div class="icono">
-                    ✧
-                </div>
-
-                <h3>
-                    Elegante
-                </h3>
-
-                <p>
-                    Diseños delicados y sofisticados.
-                </p>
-
-            </div>
-
-
-            <div class="estilo">
-
-                <div class="icono">
-                    ♡
-                </div>
-
-                <h3>
-                    Delicado
-                </h3>
-
-                <p>
-                    Detalles suaves y femeninos.
-                </p>
-
-            </div>
-
-
-            <div class="estilo">
-
-                <div class="icono">
-                    ✦
-                </div>
-
-                <h3>
-                    Único
-                </h3>
-
-                <p>
-                    Diseños para destacar.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CONTACTO -->
-
-    <section
-        id="contacto"
-        class="contacto"
-    >
-
-        <div class="titulo">
-
-            <span>
-                CONTACTO
-            </span>
-
-            <h2>
-                ¿Encontraste tu diseño?
-            </h2>
-
-            <p>
-                Comunícate con Génesis para consultar
-                disponibilidad y reservar tu cita.
-            </p>
-
-        </div>
-
-
-        <a
-            href="#"
-            class="boton"
-        >
-            Contactar por WhatsApp
-        </a>
-
-    </section>
-
-
-    <!-- PIE -->
-
-    <footer>
-
-        <h3>
-            Génesis Nails
-        </h3>
-
-        <p>
-            Belleza • Elegancia • Estilo
-        </p>
-
-    </footer>
-
-
-</body>
-        </html>
+            margin-top:
