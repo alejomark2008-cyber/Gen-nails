@@ -1,173 +1,150 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Génesis Nails</title>
 
+    <!-- TIPOGRAFÍAS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+
     <style>
-        body {
+
+        * {
+            box-sizing: border-box;
             margin: 0;
-            background: #fff1f6;
-            color: #71394e;
-            font-family: Arial, sans-serif;
-            text-align: center;
+            padding: 0;
         }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            background: #fff8fb;
+            color: #633f4e;
+            font-family: "Cormorant Garamond", serif;
+        }
+
+
+        /* =========================
+           PORTADA
+        ========================= */
 
         header {
+            min-height: 100vh;
+
             padding: 50px 20px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            position: relative;
+            overflow: hidden;
+
+            background:
+                radial-gradient(
+                    circle at 15% 15%,
+                    #ffffff 0%,
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 85% 85%,
+                    #edbfd1 0%,
+                    transparent 35%
+                ),
+
+                linear-gradient(
+                    135deg,
+                    #fffafd,
+                    #f7d6e2
+                );
         }
 
-        header img {
-            width: 200px;
-            max-width: 80%;
+
+        header::before {
+
+            content: "✦     ♡     ✦";
+
+            position: absolute;
+
+            top: 30px;
+
+            color: #b77c91;
+
+            font-size: 20px;
+
+            letter-spacing: 8px;
+
+            opacity: .7;
         }
+
+
+        header::after {
+
+            content: "♡";
+
+            position: absolute;
+
+            bottom: 30px;
+
+            color: #b77c91;
+
+            font-size: 24px;
+        }
+
+
+        /* =========================
+           LOGO
+        ========================= */
+
+        .logo {
+
+            width: 210px;
+
+            height: 210px;
+
+            object-fit: contain;
+
+            margin-bottom: 25px;
+
+            border-radius: 50%;
+
+            background: rgba(255,255,255,.6);
+
+            padding: 8px;
+
+            box-shadow:
+                0 15px 40px rgba(90,40,60,.12);
+        }
+
+
+        /* =========================
+           NOMBRE
+        ========================= */
 
         h1 {
-            font-family: Georgia, serif;
-            font-size: 55px;
-            margin: 20px 0 10px;
-        }
 
-        p {
-            font-size: 18px;
-        }
+            font-family: "Allura", cursive;
 
-        .botones {
-            margin: 30px 0;
-        }
+            font-size: clamp(75px, 13vw, 125px);
 
-        .boton {
-            display: inline-block;
-            padding: 14px 25px;
-            margin: 5px;
-            background: #8b4b65;
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-        }
+            font-weight: 400;
 
-        section {
-            padding: 60px 20px;
-        }
-
-        .galeria {
-            max-width: 1000px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
-        }
-
-        .galeria img {
-            width: 100%;
-            height: 450px;
-            object-fit: cover;
-            border-radius: 20px;
-            display: block;
-        }
-
-        @media (max-width: 700px) {
-            .galeria {
-                grid-template-columns: 1fr;
-            }
-
-            .galeria img {
-                height: auto;
-            }
-
-            h1 {
-                font-size: 45px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <header>
-
-        <img
-            src="./img/logo.png_20260816_161851_0000.png"
-            alt="Génesis Nails"
-        >
-
-        <h1>Génesis Nails</h1>
-
-        <p>
-            Belleza en cada detalle
-        </p>
-
-        <div class="botones">
-
-            <a href="#disenos" class="boton">
-                Ver diseños
-            </a>
-
-            <a href="#manos" class="boton">
-                Diseños en manos
-            </a>
-
-            <a href="#contacto" class="boton">
-                Contactar
-            </a>
-
-        </div>
-
-    </header>
-
-
-    <section id="disenos">
-
-        <h2>✨ Nuestros diseños ✨</h2>
-
-        <p>Descubre nuestra colección</p>
-
-        <div class="galeria">
-
-            <img src="./img/coleccion-01.jpg" alt="Diseño 1">
-
-            <img src="./img/coleccion-02.jpg" alt="Diseño 2">
-
-            <img src="./img/coleccion-03.jpg" alt="Diseño 3">
-
-            <img src="./img/coleccion-04.jpg" alt="Diseño 4">
-
-            <img src="./img/coleccion-05.jpg" alt="Diseño 5">
-
-            <img src="./img/coleccion-06.jpg" alt="Diseño 6">
-
-            <img src="./img/coleccion-07.jpg" alt="Diseño 7">
-
-            <img src="./img/coleccion-08.jpg" alt="Diseño 8">
-
-        </div>
-
-    </section>
-
-
-    <section id="manos">
-
-        <h2>Diseños en manos</h2>
-
-        <p>
-            Aquí podremos colocar las fotografías
-            de los diseños aplicados en manos.
-        </p>
-
-    </section>
-
-
-    <section id="contacto">
-
-        <h2>Contacto</h2>
-
-        <p>
-            323 424 5644
-        </p>
-
-    </section>
-
-
-</body>
-</html>
+            line
