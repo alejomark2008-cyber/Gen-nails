@@ -1,608 +1,465 @@
-/* =========================================
-   GÉNESIS NAILS
-   STYLE.CSS
-========================================= */
-
-
-/* =========================================
-   VARIABLES
-========================================= */
-
-:root {
-
-    --rosa-claro: #fce8ee;
-    --rosa: #f5cbd8;
-    --rosa-oscuro: #d99bad;
-
-    --crema: #fffaf8;
-    --blanco: #ffffff;
-
-    --dorado: #b58a5a;
-    --dorado-claro: #d7b889;
-
-    --negro: #292124;
-    --gris: #756b6f;
-
-    --borde: #ead5dc;
-
-}
-
-
-/* =========================================
-   CONFIGURACIÓN GENERAL
-========================================= */
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
-
 body {
-
-    background: var(--crema);
-
-    color: var(--negro);
-
-    font-family:
-        "Montserrat",
-        Arial,
-        sans-serif;
-
-    overflow-x: hidden;
-
+    background: #fcf8f9;
+    color: #55404a;
+    font-family: "Cormorant Garamond", serif;
 }
 
+/* =========================
+   PORTADA
+========================= */
 
-/* Fondo decorativo */
-
-body::before {
-
-    content: "";
-
-    position: fixed;
-
-    inset: 0;
-
-    pointer-events: none;
-
-    opacity: 0.22;
-
-    background-image:
-
-        radial-gradient(
-            var(--dorado) 1px,
-            transparent 1px
-        );
-
-    background-size: 35px 35px;
-
-    z-index: -1;
-
-}
-
-
-/* =========================================
-   BARRA DE NAVEGACIÓN
-========================================= */
-
-.navbar {
-
-    width: 100%;
-
-    height: 78px;
-
-    position: sticky;
-
-    top: 0;
-
-    z-index: 100;
+header {
+    min-height: 100vh;
+    padding: 60px 20px;
 
     display: flex;
-
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-
-    justify-content: space-between;
-
-    padding: 0 7%;
-
-    background:
-        rgba(
-            255,
-            250,
-            248,
-            0.94
-        );
-
-    backdrop-filter: blur(12px);
-
-    border-bottom:
-        1px solid
-        var(--borde);
-
-}
-
-
-/* Logo pequeño */
-
-.brand {
-
-    text-decoration: none;
-
-    color: var(--negro);
 
     text-align: center;
-
-    line-height: 0.8;
-
-}
-
-
-.brand span {
-
-    display: block;
-
-    font-family:
-        "Cormorant Garamond",
-        serif;
-
-    font-size: 24px;
-
-    letter-spacing: 4px;
-
-}
-
-
-.brand small {
-
-    display: block;
-
-    margin-top: 7px;
-
-    font-size: 8px;
-
-    letter-spacing: 6px;
-
-}
-
-
-/* Menú */
-
-.navbar nav {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 30px;
-
-}
-
-
-.navbar nav a {
-
-    color: var(--negro);
-
-    text-decoration: none;
-
-    font-size: 10px;
-
-    letter-spacing: 2px;
-
-    text-transform: uppercase;
-
-    transition: 0.3s;
-
-}
-
-
-.navbar nav a:hover {
-
-    color: var(--dorado);
-
-}
-
-
-/* =========================================
-   PORTADA
-========================================= */
-
-.hero {
-
-    min-height: 88vh;
 
     position: relative;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    text-align: center;
-
     overflow: hidden;
 
     background:
-
-        radial-gradient(
-            circle at 20% 20%,
-            rgba(255,255,255,0.8),
-            transparent 25%
-        ),
-
-        radial-gradient(
-            circle at 80% 80%,
-            rgba(215,184,137,0.16),
-            transparent 30%
-        ),
-
         linear-gradient(
-            135deg,
-            #fcebf0,
-            #f5cbd8,
-            #fff8f5
+            120deg,
+            #fffdfd 0%,
+            #f9e9ee 50%,
+            #f4d9e2 100%
         );
-
 }
 
+/* detalles decorativos */
 
-/* Círculos decorativos */
-
-.hero::before {
-
-    content: "";
-
+header::before {
+    content: "✦";
     position: absolute;
+    top: 55px;
+    left: 12%;
+    font-size: 25px;
+    color: #b89572;
+}
 
-    width: 600px;
+header::after {
+    content: "✦";
+    position: absolute;
+    bottom: 60px;
+    right: 12%;
+    font-size: 25px;
+    color: #b89572;
+}
 
-    height: 600px;
+/* línea elegante */
+
+header .subtitulo::before,
+header .subtitulo::after {
+    content: "────";
+    margin: 0 12px;
+    color: #b89572;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    width: 215px;
+    height: 215px;
+
+    object-fit: contain;
+
+    margin-bottom: 25px;
 
     border-radius: 50%;
 
-    border:
-        1px solid
-        rgba(181,138,90,0.25);
+    background: rgba(255,255,255,.65);
 
-    top: -330px;
+    padding: 10px;
 
-    left: -250px;
-
+    box-shadow:
+        0 15px 45px rgba(80,40,50,.12);
 }
 
+/* =========================
+   NOMBRE
+========================= */
 
-.hero::after {
+h1 {
+    font-family: "Allura", cursive;
 
-    content: "";
+    font-size: clamp(80px, 14vw, 135px);
 
-    position: absolute;
+    font-weight: 400;
 
-    width: 700px;
+    line-height: .85;
 
-    height: 700px;
+    color: #684052;
 
-    border-radius: 50%;
-
-    border:
-        1px solid
-        rgba(181,138,90,0.2);
-
-    bottom: -400px;
-
-    right: -300px;
-
+    letter-spacing: 1px;
 }
 
+.subtitulo {
+    margin-top: 25px;
 
-/* Contenido */
-
-.hero-content {
-
-    position: relative;
-
-    z-index: 2;
-
-    max-width: 800px;
-
-    padding: 40px 20px;
-
-}
-
-
-/* Texto pequeño */
-
-.small-title {
+    font-family: "Montserrat", sans-serif;
 
     font-size: 10px;
 
     letter-spacing: 5px;
 
-    color: var(--dorado);
-
-    font-weight: 600;
-
-    margin-bottom: 15px;
-
+    color: #8e6875;
 }
 
+.descripcion {
+    max-width: 520px;
 
-/* Logo */
+    margin-top: 25px;
 
-.main-logo {
+    font-size: 21px;
 
-    width: min(
-        540px,
-        88vw
-    );
+    line-height: 1.6;
 
-    max-height: 410px;
-
-    object-fit: contain;
-
-    display: block;
-
-    margin: auto;
-
-    mix-blend-mode: multiply;
-
+    color: #725764;
 }
 
+/* =========================
+   BOTONES
+========================= */
 
-/* Nombre */
-
-.artist-name {
-
-    font-family:
-        "Allura",
-        cursive;
-
-    font-size: 34px;
-
-    margin-top: 5px;
-
-    color: var(--negro);
-
-}
-
-
-.artist-name strong {
-
-    font-weight: 400;
-
-    color: var(--dorado);
-
-}
-
-
-/* Línea dorada */
-
-.gold-line {
-
-    width: 60px;
-
-    height: 1px;
-
-    background: var(--dorado);
-
-    margin: 20px auto;
-
-}
-
-
-/* Descripción */
-
-.description {
-
-    max-width: 470px;
-
-    margin: auto;
-
-    font-size: 13px;
-
-    line-height: 1.9;
-
-    color: var(--gris);
-
-}
-
-
-/* =========================================
-   DECORACIONES
-========================================= */
-
-.decor {
-
-    position: absolute;
-
-    color: var(--dorado);
-
-    opacity: 0.45;
-
-    z-index: 1;
-
-    pointer-events: none;
-
-}
-
-
-.decor-one {
-
-    top: 18%;
-
-    left: 10%;
-
-    font-size: 45px;
-
-}
-
-
-.decor-two {
-
-    bottom: 20%;
-
-    right: 12%;
-
-    font-size: 55px;
-
-    font-family: serif;
-
-}
-
-
-.decor-three {
-
-    top: 38%;
-
-    right: 8%;
-
-    font-size: 28px;
-
-}
-
-
-/* =========================================
-   BOTONES PRINCIPALES
-========================================= */
-
-.main-buttons {
+.botones {
+    margin-top: 35px;
 
     display: flex;
 
-    justify-content: center;
-
-    align-items: center;
-
-    gap: 15px;
-
     flex-wrap: wrap;
 
-    margin-top: 32px;
-
-}
-
-
-.main-button {
-
-    min-width: 180px;
-
-    padding: 16px 25px;
-
-    display: inline-flex;
-
     justify-content: center;
 
-    align-items: center;
-
-    gap: 9px;
-
-    text-decoration: none;
-
-    text-transform: uppercase;
-
-    letter-spacing: 2px;
-
-    font-size: 10px;
-
-    color: var(--blanco);
-
-    background: var(--negro);
-
-    border: 1px solid var(--negro);
-
-    transition: 0.3s;
-
+    gap: 14px;
 }
 
+.boton {
+    display: inline-block;
 
-.main-button:hover {
+    padding: 15px 30px;
 
-    background: var(--dorado);
+    border-radius: 50px;
 
-    border-color: var(--dorado);
-
-    transform: translateY(-3px);
-
-}
-
-
-.main-button.secondary {
-
-    background:
-        rgba(
-            255,
-            255,
-            255,
-            0.35
-        );
-
-    color: var(--negro);
-
-    border-color: var(--dorado);
-
-}
-
-
-.main-button.secondary:hover {
+    background: #704052;
 
     color: white;
 
+    text-decoration: none;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+
+    transition: all .35s ease;
+
+    box-shadow:
+        0 8px 25px rgba(80,40,50,.14);
 }
 
+.boton:hover {
+    transform: translateY(-4px);
 
-/* =========================================
-   INTRODUCCIÓN
-========================================= */
+    background: #5b3041;
 
-.intro {
+    box-shadow:
+        0 14px 30px rgba(80,40,50,.2);
+}
 
-    padding: 100px 20px 65px;
+.boton-claro {
+    background: transparent;
 
+    color: #704052;
+
+    border: 1px solid #b89572;
+
+    box-shadow: none;
+}
+
+.boton-claro:hover {
+    background: #704052;
+
+    color: white;
+}
+
+/* =========================
+   SECCIONES
+========================= */
+
+section {
+    padding: 110px 20px;
+}
+
+.titulo {
     text-align: center;
 
-    background: var(--crema);
-
+    margin-bottom: 60px;
 }
 
+.titulo span {
+    font-family: "Montserrat", sans-serif;
 
-.section-small {
+    font-size: 9px;
 
-    font-size: 10px;
+    letter-spacing: 5px;
 
-    letter-spacing: 4px;
-
-    color: var(--dorado);
-
-    font-weight: 600;
-
+    color: #ad896a;
 }
 
+.titulo h2 {
+    margin-top: 12px;
 
-.intro h1 {
+    font-family: "Allura", cursive;
 
-    font-family:
-        "Cormorant Garamond",
-        serif;
+    font-size: 78px;
 
-    font-size: 58px;
+    font-weight: 400;
 
-    font-weight: 500;
+    line-height: 1;
 
-    margin: 10px 0 15px;
-
+    color: #684052;
 }
 
+.titulo p {
+    margin-top: 12px;
 
-.intro > p:last-child {
+    font-size: 18px;
 
-    max-width: 560px;
+    color: #80636e;
+}
+
+/* =========================
+   CATÁLOGO
+========================= */
+
+#disenos {
+    background: #fffdfd;
+}
+
+.galeria {
+    max-width: 1080px;
 
     margin: auto;
 
-    color: var(--gris
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 35px;
+}
+
+.galeria img {
+    width: 100%;
+
+    height: 510px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 3px;
+
+    box-shadow:
+        0 12px 35px rgba(70,35,45,.12);
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.015);
+
+    box-shadow:
+        0 20px 45px rgba(70,35,45,.18);
+}
+
+/* =========================
+   DISEÑOS EN MANOS
+========================= */
+
+#manos {
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f5dce4,
+            #fff9fb
+        );
+}
+
+#manos h2 {
+    font-family: "Allura", cursive;
+
+    font-size: 82px;
+
+    font-weight: 400;
+
+    color: #684052;
+}
+
+#manos p {
+    max-width: 600px;
+
+    margin: 20px auto 35px;
+
+    font-size: 21px;
+
+    line-height: 1.7;
+
+    color: #725764;
+}
+
+/* =========================
+   CONTACTO
+========================= */
+
+#contacto {
+    text-align: center;
+
+    background: #fffdfd;
+}
+
+#contacto h2 {
+    font-family: "Allura", cursive;
+
+    font-size: 82px;
+
+    font-weight: 400;
+
+    color: #684052;
+}
+
+#contacto p {
+    margin-top: 15px;
+
+    font-size: 19px;
+}
+
+.numero {
+    display: block;
+
+    margin: 28px 0 30px;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 15px;
+
+    letter-spacing: 3px;
+
+    color: #72505f;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 55px 20px;
+
+    text-align: center;
+
+    background: #684052;
+
+    color: white;
+}
+
+footer h2 {
+    font-family: "Allura", cursive;
+
+    font-size: 65px;
+
+    font-weight: 400;
+}
+
+footer p {
+    margin-top: 10px;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    opacity: .9;
+}
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        min-height: 100svh;
+    }
+
+    .logo {
+        width: 165px;
+        height: 165px;
+    }
+
+    h1 {
+        font-size: 78px;
+    }
+
+    .subtitulo {
+        font-size: 8px;
+        letter-spacing: 3px;
+    }
+
+    .subtitulo::before,
+    .subtitulo::after {
+        display: none;
+    }
+
+    .descripcion {
+        font-size: 18px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .galeria img {
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .titulo h2,
+    #manos h2,
+    #contacto h2 {
+        font-size: 60px;
+    }
+
+    .botones {
+        flex-direction: column;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .boton {
+        width: 100%;
+        text-align: center;
+    }
+}
