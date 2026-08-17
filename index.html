@@ -6,97 +6,168 @@
     <title>Génesis Nails</title>
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
             margin: 0;
             background: #fff1f6;
             color: #71394e;
-            font-family: Georgia, serif;
+            font-family: Arial, sans-serif;
+            text-align: center;
         }
 
         header {
-            min-height: 100vh;
             padding: 50px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: linear-gradient(135deg, #fffafd, #f4cfdd);
         }
 
-        .logo {
+        header img {
             width: 200px;
-            height: 200px;
-            object-fit: contain;
-            margin-bottom: 20px;
+            max-width: 80%;
         }
 
         h1 {
-            margin: 10px 0;
-            font-family: cursive;
-            font-size: 70px;
-            font-weight: normal;
-            color: #7b4058;
+            font-family: Georgia, serif;
+            font-size: 55px;
+            margin: 20px 0 10px;
         }
 
-        .subtitulo {
-            font-size: 17px;
-            letter-spacing: 4px;
-            color: #986078;
-        }
-
-        .descripcion {
-            max-width: 500px;
+        p {
             font-size: 18px;
-            line-height: 1.6;
-            margin-top: 25px;
         }
 
         .botones {
-            margin-top: 30px;
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
+            margin: 30px 0;
         }
 
         .boton {
             display: inline-block;
-            padding: 14px 24px;
-            background: #82465f;
+            padding: 14px 25px;
+            margin: 5px;
+            background: #8b4b65;
             color: white;
             text-decoration: none;
             border-radius: 30px;
-            font-family: Arial, sans-serif;
-            font-size: 14px;
         }
 
         section {
-            padding: 70px 20px;
+            padding: 60px 20px;
         }
 
-        .titulo {
-            text-align: center;
-            margin-bottom: 40px;
+        .galeria {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
         }
 
-        .titulo h2 {
-            font-family: cursive;
-            font-size: 55px;
-            font-weight: normal;
-            color: #7b4058;
+        .galeria img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 20px;
+            display: block;
         }
 
-        .titulo p {
-            font-family: Arial, sans-serif;
-        }
+        @media (max-width: 700px) {
+            .galeria {
+                grid-template-columns: 1fr;
+            }
 
-       
+            .galeria img {
+                height: auto;
+            }
+
+            h1 {
+                font-size: 45px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <img
+            src="./img/logo.png_20260816_161851_0000.png"
+            alt="Génesis Nails"
+        >
+
+        <h1>Génesis Nails</h1>
+
+        <p>
+            Belleza en cada detalle
+        </p>
+
+        <div class="botones">
+
+            <a href="#disenos" class="boton">
+                Ver diseños
+            </a>
+
+            <a href="#manos" class="boton">
+                Diseños en manos
+            </a>
+
+            <a href="#contacto" class="boton">
+                Contactar
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <section id="disenos">
+
+        <h2>✨ Nuestros diseños ✨</h2>
+
+        <p>Descubre nuestra colección</p>
+
+        <div class="galeria">
+
+            <img src="./img/coleccion-01.jpg" alt="Diseño 1">
+
+            <img src="./img/coleccion-02.jpg" alt="Diseño 2">
+
+            <img src="./img/coleccion-03.jpg" alt="Diseño 3">
+
+            <img src="./img/coleccion-04.jpg" alt="Diseño 4">
+
+            <img src="./img/coleccion-05.jpg" alt="Diseño 5">
+
+            <img src="./img/coleccion-06.jpg" alt="Diseño 6">
+
+            <img src="./img/coleccion-07.jpg" alt="Diseño 7">
+
+            <img src="./img/coleccion-08.jpg" alt="Diseño 8">
+
+        </div>
+
+    </section>
+
+
+    <section id="manos">
+
+        <h2>Diseños en manos</h2>
+
+        <p>
+            Aquí podremos colocar las fotografías
+            de los diseños aplicados en manos.
+        </p>
+
+    </section>
+
+
+    <section id="contacto">
+
+        <h2>Contacto</h2>
+
+        <p>
+            Comunícate con Génesis para reservar tu cita.
+        </p>
+
+    </section>
+
+
+</body>
+</html>
