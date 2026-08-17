@@ -9,142 +9,230 @@
 
     <title>Génesis Nails</title>
 
-    <!-- TIPOGRAFÍAS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
 
 
-    <style>
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+<body>
 
 
-        html {
-            scroll-behavior: smooth;
-        }
+    <!-- =========================
+         PORTADA
+    ========================= -->
+
+    <header>
+
+        <img
+            class="logo"
+            src="img/logo.png_20260816_161851_0000.png"
+            alt="Logo de Génesis Nails"
+        >
 
 
-        body {
-            background: #fff8fb;
-            color: #633f4e;
-            font-family: "Cormorant Garamond", serif;
-        }
+        <h1>
+            Génesis Nails
+        </h1>
 
 
-        /* =========================
-           PORTADA
-        ========================= */
-
-        header {
-            min-height: 100vh;
-
-            padding: 50px 20px;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            text-align: center;
-
-            position: relative;
-            overflow: hidden;
-
-            background:
-                radial-gradient(
-                    circle at 15% 15%,
-                    #ffffff 0%,
-                    transparent 30%
-                ),
-
-                radial-gradient(
-                    circle at 85% 85%,
-                    #edbfd1 0%,
-                    transparent 35%
-                ),
-
-                linear-gradient(
-                    135deg,
-                    #fffafd,
-                    #f7d6e2
-                );
-        }
+        <p class="subtitulo">
+            BELLEZA EN CADA DETALLE
+        </p>
 
 
-        header::before {
-
-            content: "✦     ♡     ✦";
-
-            position: absolute;
-
-            top: 30px;
-
-            color: #b77c91;
-
-            font-size: 20px;
-
-            letter-spacing: 8px;
-
-            opacity: .7;
-        }
+        <p class="descripcion">
+            Diseños de uñas elegantes, delicados y únicos.
+            Encuentra el estilo perfecto para ti.
+        </p>
 
 
-        header::after {
+        <div class="botones">
 
-            content: "♡";
-
-            position: absolute;
-
-            bottom: 30px;
-
-            color: #b77c91;
-
-            font-size: 24px;
-        }
+            <a
+                href="#disenos"
+                class="boton"
+            >
+                Ver diseños
+            </a>
 
 
-        /* =========================
-           LOGO
-        ========================= */
-
-        .logo {
-
-            width: 210px;
-
-            height: 210px;
-
-            object-fit: contain;
-
-            margin-bottom: 25px;
-
-            border-radius: 50%;
-
-            background: rgba(255,255,255,.6);
-
-            padding: 8px;
-
-            box-shadow:
-                0 15px 40px rgba(90,40,60,.12);
-        }
+            <a
+                href="#manos"
+                class="boton boton-claro"
+            >
+                Diseños en manos
+            </a>
 
 
-        /* =========================
-           NOMBRE
-        ========================= */
+            <a
+                href="#contacto"
+                class="boton boton-claro"
+            >
+                Contactar
+            </a>
 
-        h1 {
+        </div>
 
-            font-family: "Allura", cursive;
+    </header>
 
-            font-size: clamp(75px, 13vw, 125px);
 
-            font-weight: 400;
 
-            line
+    <!-- =========================
+         CATÁLOGO DE DISEÑOS
+    ========================= -->
+
+    <section id="disenos">
+
+
+        <div class="titulo">
+
+            <span>
+                GÉNESIS NAILS
+            </span>
+
+
+            <h2>
+                Nuestros diseños
+            </h2>
+
+
+            <p>
+                Descubre nuestra colección
+            </p>
+
+        </div>
+
+
+
+        <div class="galeria">
+
+
+            <img
+                src="img/coleccion-01.jpg"
+                alt="Diseño de uñas 1"
+            >
+
+
+            <img
+                src="img/coleccion-02.jpg"
+                alt="Diseño de uñas 2"
+            >
+
+
+            <img
+                src="img/coleccion-03.jpg"
+                alt="Diseño de uñas 3"
+            >
+
+
+            <img
+                src="img/coleccion-04.jpg"
+                alt="Diseño de uñas 4"
+            >
+
+
+            <img
+                src="img/coleccion-05.jpg"
+                alt="Diseño de uñas 5"
+            >
+
+
+            <img
+                src="img/coleccion-06.jpg"
+                alt="Diseño de uñas 6"
+            >
+
+
+            <img
+                src="img/coleccion-07.jpg"
+                alt="Diseño de uñas 7"
+            >
+
+
+            <img
+                src="img/coleccion-08.jpg"
+                alt="Diseño de uñas 8"
+            >
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         DISEÑOS EN MANOS
+    ========================= -->
+
+    <section id="manos">
+
+
+        <div class="titulo">
+
+            <span>
+                ✦ INSPIRACIÓN ✦
+            </span>
+
+        </div>
+
+
+        <h2>
+            Diseños en manos
+        </h2>
+
+
+        <p>
+            Aquí podrás ver cómo lucen nuestros diseños
+            aplicados en manos.
+        </p>
+
+
+        <a
+            href="#contacto"
+            class="boton"
+        >
+            Quiero este diseño
+        </a>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTACTO
+    ========================= -->
+
+    <section id="contacto">
+
+
+        <div class="titulo">
+
+            <span>
+                CONTACTO
+            </span>
+
+        </div>
+
+
+        <h2>
+            ¿Encontraste tu diseño?
+        </h2>
+
+
+        <p>
+            Comunícate con Génesis para reservar tu cita.
+        </p>
+
+
+        <span class="numero">
+            📱 323 424 5644
+        </span>
+
+
+    </section>
+
+
+
+   
