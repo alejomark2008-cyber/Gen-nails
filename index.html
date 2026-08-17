@@ -6,18 +6,9 @@
 
     <title>Génesis Nails</title>
 
-    <!-- Tipografías elegantes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-
     <style>
-
         * {
             box-sizing: border-box;
-            margin: 0;
-            padding: 0;
         }
 
         html {
@@ -25,17 +16,15 @@
         }
 
         body {
-            background: #fff3f7;
-            color: #633c4d;
-            font-family: "Montserrat", sans-serif;
+            margin: 0;
+            background: #fff1f6;
+            color: #71394e;
+            font-family: Georgia, serif;
         }
-
-        /* =========================
-           PORTADA
-        ========================= */
 
         header {
             min-height: 100vh;
+            padding: 50px 20px;
 
             display: flex;
             flex-direction: column;
@@ -44,111 +33,47 @@
 
             text-align: center;
 
-            padding: 50px 20px;
-
-            background:
-                radial-gradient(
-                    circle at 10% 20%,
-                    #ffffff 0%,
-                    transparent 30%
-                ),
-                radial-gradient(
-                    circle at 90% 80%,
-                    #f3c5d6 0%,
-                    transparent 35%
-                ),
-                linear-gradient(
-                    135deg,
-                    #fffafd,
-                    #f6d5e2
-                );
-
-            position: relative;
-            overflow: hidden;
+            background: linear-gradient(
+                135deg,
+                #fffafd,
+                #f4cfdd
+            );
         }
-
-        header::before {
-            content: "♡   ✦   ♡";
-
-            position: absolute;
-            top: 30px;
-
-            font-size: 22px;
-
-            color: #b4778e;
-
-            letter-spacing: 8px;
-        }
-
-        /* LOGO */
 
         .logo {
-            width: 210px;
-            height: 210px;
-
+            width: 200px;
+            height: 200px;
             object-fit: contain;
-
-            margin-bottom: 25px;
-
-            border-radius: 50%;
-
-            background: rgba(255,255,255,.6);
-
-            padding: 8px;
-
-            box-shadow:
-                0 15px 40px rgba(100,40,60,.13);
+            margin-bottom: 20px;
         }
 
-        /* NOMBRE */
-
         h1 {
-            font-family: "Allura", cursive;
+            margin: 10px 0;
 
-            font-size: clamp(75px, 14vw, 125px);
+            font-family: cursive;
 
-            font-weight: 400;
+            font-size: 70px;
 
-            line-height: 1;
+            font-weight: normal;
 
-            color: #793f57;
+            color: #7b4058;
         }
 
         .subtitulo {
-            margin-top: 18px;
-
-            font-size: 14px;
-
-            letter-spacing: 5px;
-
-            text-transform: uppercase;
-
-            color: #986178;
+            font-size: 17px;
+            letter-spacing: 4px;
+            color: #986078;
         }
 
-        .frase {
-            max-width: 550px;
-
-            margin-top: 25px;
+        .descripcion {
+            max-width: 500px;
 
             font-size: 18px;
 
-            line-height: 1.7;
+            line-height: 1.6;
 
-            color: #704658;
+            margin-top: 25px;
         }
-
-        .decoracion {
-            margin: 25px 0;
-
-            font-size: 25px;
-
-            color: #b56f88;
-        }
-
-        /* =========================
-           BOTONES
-        ========================= */
 
         .botones {
             margin-top: 30px;
@@ -157,7 +82,7 @@
 
             justify-content: center;
 
-            gap: 12px;
+            gap: 10px;
 
             flex-wrap: wrap;
         }
@@ -165,9 +90,7 @@
         .boton {
             display: inline-block;
 
-            padding: 14px 25px;
-
-            border-radius: 40px;
+            padding: 14px 24px;
 
             background: #82465f;
 
@@ -175,18 +98,157 @@
 
             text-decoration: none;
 
-            font-size: 15px;
+            border-radius: 30px;
 
-            transition: .3s;
+            font-family: Arial, sans-serif;
 
-            box-shadow:
-                0 8px 20px rgba(100,40,60,.12);
+            font-size: 14px;
         }
 
         .boton:hover {
-            background: #693449;
-
-            transform: translateY(-3px);
+            background: #673449;
         }
 
-        .bot
+        section {
+            padding: 70px 20px;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .titulo h2 {
+            font-family: cursive;
+
+            font-size: 55px;
+
+            font-weight: normal;
+
+            color: #7b4058;
+        }
+
+        .titulo p {
+            font-family: Arial, sans-serif;
+        }
+
+        /* GALERÍA */
+
+        #disenos {
+            background: #fffafd;
+        }
+
+        .galeria {
+            max-width: 1000px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 25px;
+        }
+
+        .galeria img {
+            width: 100%;
+
+            height: 450px;
+
+            object-fit: cover;
+
+            display: block;
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 10px 25px rgba(80,30,50,.15);
+        }
+
+        /* MANOS */
+
+        #manos {
+            text-align: center;
+
+            background: #f7d9e5;
+        }
+
+        #manos h2 {
+            font-family: cursive;
+
+            font-size: 60px;
+
+            font-weight: normal;
+
+            color: #7b4058;
+        }
+
+        #manos p {
+            max-width: 600px;
+
+            margin: 20px auto 30px;
+
+            font-size: 18px;
+
+            line-height: 1.6;
+        }
+
+        /* CONTACTO */
+
+        #contacto {
+            text-align: center;
+
+            background: #fffafd;
+        }
+
+        #contacto h2 {
+            font-family: cursive;
+
+            font-size: 60px;
+
+            font-weight: normal;
+
+            color: #7b4058;
+        }
+
+        .numero {
+            display: block;
+
+            margin: 20px 0 30px;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 20px;
+        }
+
+        footer {
+            padding: 40px 20px;
+
+            text-align: center;
+
+            background: #71394e;
+
+            color: white;
+        }
+
+        footer h2 {
+            font-family: cursive;
+
+            font-size: 45px;
+
+            font-weight: normal;
+        }
+
+        @media (max-width: 700px) {
+
+            h1 {
+                font-size: 55px;
+            }
+
+            .logo {
+                width: 160px;
+                height: 160px;
+            }
+
+            .galeria {
+                grid-template-columns: 1
