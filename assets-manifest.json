@@ -1,0 +1,386 @@
+[
+  {
+    "id": 1,
+    "file": "assets/01-certificados-formacion.jpg",
+    "title": "Certificados y reconocimientos",
+    "category": "Formación",
+    "description": "Certificados y reconocimientos profesionales reunidos en una sola composición.",
+    "alt": "Certificados y reconocimientos profesionales reunidos en una sola composición."
+  },
+  {
+    "id": 2,
+    "file": "assets/02-manicura-negro-nude.jpg",
+    "title": "Manicura negra y nude",
+    "category": "Manicuras",
+    "description": "Diseño de uñas en tonos negro, nude y detalles decorativos.",
+    "alt": "Diseño de uñas en tonos negro, nude y detalles decorativos."
+  },
+  {
+    "id": 3,
+    "file": "assets/03-manicura-rosa-floral.jpg",
+    "title": "Manicura rosa floral",
+    "category": "Manicuras",
+    "description": "Manicura rosa suave con pequeños detalles florales.",
+    "alt": "Manicura rosa suave con pequeños detalles florales."
+  },
+  {
+    "id": 4,
+    "file": "assets/04-nail-art-verde-glitter.jpg",
+    "title": "Nail art verde con glitter",
+    "category": "Nail Art",
+    "description": "Uñas largas con acabado verde brillante y detalles de glitter.",
+    "alt": "Uñas largas con acabado verde brillante y detalles de glitter."
+  },
+  {
+    "id": 5,
+    "file": "assets/05-manicura-french-blanca.jpg",
+    "title": "Manicura francesa blanca",
+    "category": "Manicuras",
+    "description": "Diseño de uñas largas en tono natural con puntas blancas.",
+    "alt": "Diseño de uñas largas en tono natural con puntas blancas."
+  },
+  {
+    "id": 6,
+    "file": "assets/06-manicura-francesa-azul.jpg",
+    "title": "Manicura francesa azul",
+    "category": "Manicuras",
+    "description": "Manicura francesa con detalles y puntas azules.",
+    "alt": "Manicura francesa con detalles y puntas azules."
+  },
+  {
+    "id": 7,
+    "file": "assets/07-nail-art-negro-ilustrado.jpg",
+    "title": "Nail art negro ilustrado",
+    "category": "Nail Art",
+    "description": "Diseño oscuro con ilustraciones y detalles artísticos.",
+    "alt": "Diseño oscuro con ilustraciones y detalles artísticos."
+  },
+  {
+    "id": 8,
+    "file": "assets/08-manicura-nude-natural.jpg",
+    "title": "Manicura nude natural",
+    "category": "Manicuras",
+    "description": "Manicura delicada en tonos nude y acabado natural.",
+    "alt": "Manicura delicada en tonos nude y acabado natural."
+  },
+  {
+    "id": 9,
+    "file": "assets/09-manicura-azul-intenso.jpg",
+    "title": "Manicura azul intenso",
+    "category": "Manicuras",
+    "description": "Uñas en azul intenso con acabado brillante.",
+    "alt": "Uñas en azul intenso con acabado brillante."
+  },
+  {
+    "id": 10,
+    "file": "assets/10-manicura-nude-elegante.jpg",
+    "title": "Manicura nude elegante",
+    "category": "Manicuras",
+    "description": "Diseño nude de aspecto clásico y elegante.",
+    "alt": "Diseño nude de aspecto clásico y elegante."
+  },
+  {
+    "id": 11,
+    "file": "assets/11-nail-art-negro-verde.jpg",
+    "title": "Nail art negro y verde",
+    "category": "Nail Art",
+    "description": "Diseño con base oscura y pequeños detalles verdes.",
+    "alt": "Diseño con base oscura y pequeños detalles verdes."
+  },
+  {
+    "id": 12,
+    "file": "assets/12-manicura-delicada-manos.jpg",
+    "title": "Manicura delicada",
+    "category": "Manicuras",
+    "description": "Fotografía de manicura delicada en tonos suaves.",
+    "alt": "Fotografía de manicura delicada en tonos suaves."
+  },
+  {
+    "id": 13,
+    "file": "assets/13-manicura-rosa-coral.jpg",
+    "title": "Manicura rosa coral",
+    "category": "Manicuras",
+    "description": "Uñas en tono rosa coral con acabado pulido.",
+    "alt": "Uñas en tono rosa coral con acabado pulido."
+  },
+  {
+    "id": 14,
+    "file": "assets/14-manicura-fucsia.jpg",
+    "title": "Manicura fucsia",
+    "category": "Manicuras",
+    "description": "Diseño en tonos fucsia y rosa vibrante.",
+    "alt": "Diseño en tonos fucsia y rosa vibrante."
+  },
+  {
+    "id": 15,
+    "file": "assets/15-manicura-marron-nude.jpg",
+    "title": "Manicura marrón y nude",
+    "category": "Manicuras",
+    "description": "Diseño en tonos marrones y nude con decoración.",
+    "alt": "Diseño en tonos marrones y nude con decoración."
+  },
+  {
+    "id": 16,
+    "file": "assets/16-manicura-nude-blanco.jpg",
+    "title": "Manicura nude y blanco",
+    "category": "Manicuras",
+    "description": "Manicura clara con combinación de nude y blanco.",
+    "alt": "Manicura clara con combinación de nude y blanco."
+  },
+  {
+    "id": 17,
+    "file": "assets/17-manicura-rosa-lila.jpg",
+    "title": "Manicura rosa y lila",
+    "category": "Manicuras",
+    "description": "Diseño pastel con tonos rosa y lila.",
+    "alt": "Diseño pastel con tonos rosa y lila."
+  },
+  {
+    "id": 18,
+    "file": "assets/18-manicura-rojo-negro.jpg",
+    "title": "Manicura roja y negra",
+    "category": "Manicuras",
+    "description": "Diseño decorativo en rojo, negro y tonos vino.",
+    "alt": "Diseño decorativo en rojo, negro y tonos vino."
+  },
+  {
+    "id": 19,
+    "file": "assets/19-manicura-lila-cromada.jpg",
+    "title": "Manicura lila artística",
+    "category": "Manicuras",
+    "description": "Uñas largas con tonos lila y acabado artístico.",
+    "alt": "Uñas largas con tonos lila y acabado artístico."
+  },
+  {
+    "id": 20,
+    "file": "assets/20-manicura-azul-cromada.jpg",
+    "title": "Manicura azul cromada",
+    "category": "Manicuras",
+    "description": "Diseño azul intenso con acabado brillante y cromado.",
+    "alt": "Diseño azul intenso con acabado brillante y cromado."
+  },
+  {
+    "id": 21,
+    "file": "assets/21-proceso-aplicacion-unas.jpg",
+    "title": "Proceso de aplicación",
+    "category": "Proceso",
+    "description": "Fotografía de una sesión de trabajo y aplicación de uñas.",
+    "alt": "Fotografía de una sesión de trabajo y aplicación de uñas."
+  },
+  {
+    "id": 22,
+    "file": "assets/22-nail-art-rojo-dorado.jpg",
+    "title": "Nail art rojo y dorado",
+    "category": "Nail Art",
+    "description": "Diseño largo con decoración roja, dorada y detalles gráficos.",
+    "alt": "Diseño largo con decoración roja, dorada y detalles gráficos."
+  },
+  {
+    "id": 23,
+    "file": "assets/23-manicura-francesa-decorada.jpg",
+    "title": "Francesa decorada",
+    "category": "Nail Art",
+    "description": "Manicura francesa con detalles decorativos y pedrería.",
+    "alt": "Manicura francesa con detalles decorativos y pedrería."
+  },
+  {
+    "id": 24,
+    "file": "assets/24-nail-art-azul-tropical.jpg",
+    "title": "Nail art azul tropical",
+    "category": "Nail Art",
+    "description": "Diseño azul con motivos tropicales y detalles decorativos.",
+    "alt": "Diseño azul con motivos tropicales y detalles decorativos."
+  },
+  {
+    "id": 25,
+    "file": "assets/25-manicura-fotografia-manos.jpg",
+    "title": "Manicura en fotografía editorial",
+    "category": "Manicuras",
+    "description": "Fotografía de manos mostrando un diseño de uñas.",
+    "alt": "Fotografía de manos mostrando un diseño de uñas."
+  },
+  {
+    "id": 26,
+    "file": "assets/26-manicura-negro-plata.jpg",
+    "title": "Manicura negra y plateada",
+    "category": "Manicuras",
+    "description": "Diseño oscuro con detalles plateados y pequeños motivos.",
+    "alt": "Diseño oscuro con detalles plateados y pequeños motivos."
+  },
+  {
+    "id": 27,
+    "file": "assets/27-nail-art-rojo-blanco-negro.jpg",
+    "title": "Nail art rojo blanco y negro",
+    "category": "Nail Art",
+    "description": "Diseño artístico rojo, blanco y negro fotografiado sobre fondo decorativo.",
+    "alt": "Diseño artístico rojo, blanco y negro fotografiado sobre fondo decorativo."
+  },
+  {
+    "id": 28,
+    "file": "assets/28-manicura-negra-detalles.jpg",
+    "title": "Manicura negra con detalles",
+    "category": "Manicuras",
+    "description": "Manicura en tonos oscuros con pequeños detalles ilustrados.",
+    "alt": "Manicura en tonos oscuros con pequeños detalles ilustrados."
+  },
+  {
+    "id": 29,
+    "file": "assets/29-nail-art-floral-colorido.jpg",
+    "title": "Nail art floral colorido",
+    "category": "Nail Art",
+    "description": "Diseño con flores y detalles de varios colores.",
+    "alt": "Diseño con flores y detalles de varios colores."
+  },
+  {
+    "id": 30,
+    "file": "assets/30-nail-art-3d-beige.jpg",
+    "title": "Nail art 3D beige",
+    "category": "Nail Art 3D",
+    "description": "Diseño tridimensional en tonos beige y detalles escultóricos.",
+    "alt": "Diseño tridimensional en tonos beige y detalles escultóricos."
+  },
+  {
+    "id": 31,
+    "file": "assets/31-manicura-negra-editorial.jpg",
+    "title": "Manicura oscura editorial",
+    "category": "Manicuras",
+    "description": "Fotografía de manicura sobre fondo negro.",
+    "alt": "Fotografía de manicura sobre fondo negro."
+  },
+  {
+    "id": 32,
+    "file": "assets/32-manicura-nude-larga.jpg",
+    "title": "Manicura nude larga",
+    "category": "Manicuras",
+    "description": "Uñas largas en tonos nude y acabado brillante.",
+    "alt": "Uñas largas en tonos nude y acabado brillante."
+  },
+  {
+    "id": 33,
+    "file": "assets/33-manicura-francesa-closeup.jpg",
+    "title": "Detalle de manicura francesa",
+    "category": "Manicuras",
+    "description": "Primer plano de uñas con puntas blancas y acabado natural.",
+    "alt": "Primer plano de uñas con puntas blancas y acabado natural."
+  },
+  {
+    "id": 34,
+    "file": "assets/34-detalle-decoracion-naranja.jpg",
+    "title": "Detalle de decoración naranja",
+    "category": "Técnicas",
+    "description": "Primer plano de una aplicación decorativa en tono naranja.",
+    "alt": "Primer plano de una aplicación decorativa en tono naranja."
+  },
+  {
+    "id": 35,
+    "file": "assets/35-manicura-nude-pedreria.jpg",
+    "title": "Manicura nude con pedrería",
+    "category": "Nail Art",
+    "description": "Manicura clara con detalles decorativos y pedrería.",
+    "alt": "Manicura clara con detalles decorativos y pedrería."
+  },
+  {
+    "id": 36,
+    "file": "assets/36-muestrario-tips-3d.jpg",
+    "title": "Muestrario de tips decorados",
+    "category": "Muestras",
+    "description": "Colección de tips de uñas con diseños decorativos.",
+    "alt": "Colección de tips de uñas con diseños decorativos."
+  },
+  {
+    "id": 37,
+    "file": "assets/37-muestrario-tips-neon.jpg",
+    "title": "Muestrario de tips neón",
+    "category": "Muestras",
+    "description": "Muestras de tips con diseños en tonos neón y gráficos.",
+    "alt": "Muestras de tips con diseños en tonos neón y gráficos."
+  },
+  {
+    "id": 38,
+    "file": "assets/38-muestrario-tips-variedad-01.jpg",
+    "title": "Muestrario de diseños variados I",
+    "category": "Muestras",
+    "description": "Colección de tips con distintos colores y técnicas.",
+    "alt": "Colección de tips con distintos colores y técnicas."
+  },
+  {
+    "id": 39,
+    "file": "assets/39-muestrario-tips-variedad-02.jpg",
+    "title": "Muestrario de diseños variados II",
+    "category": "Muestras",
+    "description": "Segunda composición de tips con decoraciones variadas.",
+    "alt": "Segunda composición de tips con decoraciones variadas."
+  },
+  {
+    "id": 40,
+    "file": "assets/40-muestrario-tips-coloridos.jpg",
+    "title": "Muestrario de tips coloridos",
+    "category": "Muestras",
+    "description": "Colección de diseños coloridos aplicados sobre tips.",
+    "alt": "Colección de diseños coloridos aplicados sobre tips."
+  },
+  {
+    "id": 41,
+    "file": "assets/41-muestrario-tips-tematicos.jpg",
+    "title": "Muestrario de tips temáticos",
+    "category": "Muestras",
+    "description": "Tips con ilustraciones y motivos temáticos.",
+    "alt": "Tips con ilustraciones y motivos temáticos."
+  },
+  {
+    "id": 42,
+    "file": "assets/42-muestrario-tips-halloween.jpg",
+    "title": "Muestrario de tips Halloween",
+    "category": "Muestras",
+    "description": "Diseños de tips con motivos de Halloween y tonos intensos.",
+    "alt": "Diseños de tips con motivos de Halloween y tonos intensos."
+  },
+  {
+    "id": 43,
+    "file": "assets/43-fantasia-caracterizacion.jpg",
+    "title": "Proyecto de fantasía: caracterización",
+    "category": "Fantasía",
+    "description": "Fotografía de caracterización artística acompañada de uñas temáticas.",
+    "alt": "Fotografía de caracterización artística acompañada de uñas temáticas."
+  },
+  {
+    "id": 44,
+    "file": "assets/44-nail-art-dragon-rojo-azul.jpg",
+    "title": "Nail art de dragón rojo y azul",
+    "category": "Fantasía",
+    "description": "Uñas escultóricas con figuras de dragones en rojo y azul.",
+    "alt": "Uñas escultóricas con figuras de dragones en rojo y azul."
+  },
+  {
+    "id": 45,
+    "file": "assets/45-nail-art-dragon-verde.jpg",
+    "title": "Nail art de dragón verde",
+    "category": "Fantasía",
+    "description": "Diseño escultórico con figura de dragón verde.",
+    "alt": "Diseño escultórico con figura de dragón verde."
+  },
+  {
+    "id": 46,
+    "file": "assets/46-proyecto-fantasia-personaje.jpg",
+    "title": "Proyecto de fantasía: personaje",
+    "category": "Fantasía",
+    "description": "Fotografía de una caracterización temática con diseño de uñas artístico.",
+    "alt": "Fotografía de una caracterización temática con diseño de uñas artístico."
+  },
+  {
+    "id": 47,
+    "file": "assets/47-proyecto-fantasia-azul-01.jpg",
+    "title": "Proyecto de fantasía azul I",
+    "category": "Fantasía",
+    "description": "Composición temática azul con uñas y elementos de caracterización.",
+    "alt": "Composición temática azul con uñas y elementos de caracterización."
+  },
+  {
+    "id": 48,
+    "file": "assets/48-proyecto-fantasia-azul-02.jpg",
+    "title": "Proyecto de fantasía azul II",
+    "category": "Fantasía",
+    "description": "Segunda fotografía de la propuesta temática azul.",
+    "alt": "Segunda fotografía de la propuesta temática azul."
+  }
+]
